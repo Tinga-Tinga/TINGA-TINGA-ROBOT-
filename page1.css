@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.checkout-container {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.order-summary {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.order-summary h2 {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.order-details {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.order-details img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.order-text p:first-child {
+  font-weight: bold;
+}
+
+.order-text p:last-child {
+  margin-top: 5px;
+}
+
+
+.customer-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.customer-info label {
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
+}
+
+.customer-info input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+
+.payment-summary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border: 2px solid black;
+}
+
+.summary-item.total {
+  font-weight: bold;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+
+
+
+
+.submit-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.proceed-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.proceed-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+      padding: 15px;
+  }
+}
